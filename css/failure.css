@@ -1,0 +1,91 @@
+.status-icon {
+  display: flex;
+  margin: 0 auto;
+}
+
+.heading {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.heading > img {
+  margin-bottom: 12px;
+}
+
+h4 {
+  margin-top: 6px;
+}
+
+.snapshot {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.image {
+  background: url('../images/car.jpg');
+  width: 64px;
+  aspect-ratio: 1;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.available {
+  background-color: #017401;
+  padding: 3px 12px;
+  color: white;
+  display: block;
+  width: fit-content;
+  font-size: 10px;
+  text-transform: uppercase;
+  margin-top: 6px;
+}
+
+.flex, .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex.secondary-btn {
+  justify-content: space-between;
+  font-weight: 600;
+}
+
+.flex.total {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.flex > .primary-btn {
+  width: fit-content;
+}
+
+.renter-phone {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.summary {
+  display: grid;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.buttons, .reasons {
+  margin-top: 20px;
+}
+
+.reasons {
+  background-color: #022F8E10;
+  padding: 12px;
+  display: grid;
+  gap: 12px;
+}
+
+ul {
+  display: grid;
+  gap: 12px;
+}
