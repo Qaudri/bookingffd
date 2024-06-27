@@ -1,0 +1,78 @@
+.container {
+  margin-top: 60px;
+  display: grid;
+  gap: 20px;
+}
+
+h4 {
+  margin-top: 6px;
+}
+
+form {
+  display: grid;
+  gap: 20px;
+}
+
+.password {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password button {
+  position: absolute;
+  right: 11px;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #00000060;
+}
+
+.range{
+  background-color: #595D62;
+  width: 100%;
+  height: 8px;
+  border-radius: 9999px;
+  margin-top: 4px;
+}
+
+.value {
+  height: 8px;
+  background: var(--primary-color);
+  width: 5%;
+  border-radius: 9999px;
+}
+
+.criteria {
+  color: #00000060;
+  display: grid;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+ul {
+  display: grid;
+  gap: 12px;
+}
+li {
+  display: flex;
+  gap: 12px;
+}
+
+.checkmark {
+  background: #00000060;
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  width: 20px;
+}
+
+button{
+  margin-top: 20px;
+}

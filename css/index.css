@@ -1,0 +1,31 @@
+.wrapper {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  background: linear-gradient(to bottom, transparent, white, white, white);
+  height: 100%;
+  display: grid;
+  place-content: center;
+}
+
+.wrapper {
+  width: 100%;
+  text-align: center;
+  display: grid;
+  place-content: center;
+  gap: 12px;
+}
+
+.or {
+  color: black;
+  opacity: 60%;
+}
+
+.signin {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.signin span {
+  font-weight: 500;
+}

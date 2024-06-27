@@ -1,0 +1,59 @@
+.container {
+  margin-top: 60px;
+  display: grid;
+  gap: 20px;
+}
+
+h4 {
+  margin-top: 6px;
+}
+
+form {
+  display: grid;
+  gap: 20px;
+}
+
+.password {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password button {
+  position: absolute;
+  right: 11px;
+  font-weight: 400;
+  font-size: 14px;
+}
+form > button{
+  margin-top: 20px;
+}
+
+.flex {
+  display: flex;
+  gap: 8px;
+  border: 1px solid #D0D5DD;
+  align-items: center;
+  padding: 10px 14px;
+}
+
+label {
+  margin-bottom: 6px;
+  font-weight: 500;
+  font-size: 14px;
+  display: block;
+}
+
+.flex input {
+  font-weight: 400;
+  font-size: 14px;
+  display: flex;
+  gap: 8px;
+  border: none;
+  outline: none;
+}
+
+.signup {
+  font-size: 14px;
+  font-weight: 300;
+}

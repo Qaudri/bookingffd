@@ -1,0 +1,41 @@
+.container {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-between;
+  height: 65vh;
+}
+
+.heading {
+  display: grid;
+  gap: 6px;
+}
+
+a.primary-btn{
+  margin-top: 20px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.toggle-background{
+  border-radius: 9999px;
+  background: var(--primary-color);
+  width: 44px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 0 4px;
+}
+
+.switch {
+  background: white;
+  border-radius: 9999px;
+  aspect-ratio: 1;
+  width: 16px;
+}

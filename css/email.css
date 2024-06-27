@@ -1,0 +1,40 @@
+.container {
+  margin-top: 60px;
+  display: grid;
+}
+
+form {
+  margin-top: 20px;
+}
+
+h4 {
+  margin-top: 6px;
+}
+
+.flex {
+  display: flex;
+  gap: 8px;
+  border: 1px solid #D0D5DD;
+  align-items: center;
+  padding: 10px 14px;
+}
+
+label {
+  margin-bottom: 6px;
+  font-weight: 500;
+  font-size: 14px;
+  display: block;
+}
+
+input {
+  font-weight: 400;
+  font-size: 14px;
+  display: flex;
+  gap: 8px;
+  border: none;
+  outline: none;
+}
+
+button {
+  margin-top: 20px;
+}
