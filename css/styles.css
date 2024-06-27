@@ -16,6 +16,7 @@ body {
   margin: 0;
   height: 100dvh;
   min-height: 100dvh;
+  overflow: scroll;
 }
 
 main {
@@ -45,7 +46,7 @@ a {
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 600;
   color: black;
 }
@@ -58,6 +59,16 @@ h3 {
 h4 {
   font-size: 16px;
   font-weight: 400;
+}
+
+h5 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+p {
+ font-weight: 400;
+ font-size: 14px;
 }
 
 .secondary-btn {
@@ -97,11 +108,6 @@ h4 {
   background-color: #022F8E50 ;
 }
 
-button {
-  border: none;
-  outline: none;
-}
-
 label {
   margin-bottom: 6px;
   font-weight: 500;
@@ -133,4 +139,57 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+button {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.blue {
+  color: var(--primary-color)
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.divider {
+  margin: 20px 0;
+  width: 100%;
+  height: 1px;
+  background-color: #D0D5DD;
+}
+
+.toggle-background{
+  border-radius: 9999px;
+  background: var(--primary-color);
+  width: 44px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 0 4px;
+}
+
+.switch {
+  background: white;
+  border-radius: 9999px;
+  aspect-ratio: 1;
+  width: 16px;
+}
+
+.paragraph {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.paragraph span {
+  height: 20px;
 }
