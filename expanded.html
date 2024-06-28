@@ -38,59 +38,88 @@
     </div>
 
     <div class="options">
-      <div class="input">
+     
+      <div class="input formInfo">
         <div>
-          <h3>NGN 1,550 <span class="gray" style="font-size: 14px; font-weight: 400;">/hour</span></h3>
-          <p class="gray">Hourly payment</p>
+          <h3>NGN 13,000 <span class="gray" style="font-size: 14px; font-weight: 400;">/hour</span></h3>
+          <p class="gray">Pay now and save money</p>
+          <input type="radio" value="1" name="hideShow" id="hideShow1">
+          
+          <div class="select hiddenContents">
+            
+              <div class="day">
+             
+                <select  type="" placeholder="Select rental duration"  id="mySelect" onchange="myFunction()">
+                  
+                  <option value="1HR">1HR</option>
+                  <option value="2HR">2HR</option>
+                  <option value="zcedes">3HR</option>
+                  <option value="Volvo">4HR</option>
+                </select>
+              </div>
+          
+          </div>
+         
+
         </div>
-        <button class="checkbox" clicked>
-          <img src="./images/icons/check.svg" alt="">
-        </button>
+        <p class="checkBoxTag checkbox active"><label for="hideShow1"></label></p>
+        
       </div>
-      <div class="input">
+      <div class="input formInfo">
         <div>
           <h3>NGN 13,000 <span class="gray" style="font-size: 14px; font-weight: 400;">/day</span></h3>
           <p class="gray">Pay now and save money</p>
-          <div class="select">
-            <input type="" placeholder="Select rental duration">
+          <input type="radio" value="2" name="hideShow" id="hideShow2">
+          
+          <div class="select hiddenContents">
             <div class="day">
-              <p>Day</p>
-              <img src="./images/icons/chevron.svg" width="20px" alt="">
+             
+              <select  type="" placeholder="Select rental duration"  id="mySelect" onchange="myFunction()">
+                
+                <option value="Audi">1day</option>
+                <option value="BMW">2days</option>
+                <option value="Mercedes">3days</option>
+                <option value="Volvo">4days</option>
+              </select>
             </div>
           </div>
-          <p>Exceeding 4 DAYS will result in an extra fee</p>
-          <h2 class="price" style="font-weight: 800; margin-top: 12px;">
-            NGN 46,800 
-            <span class="gray" style="font-size: 14px; font-weight: 400;"> total
-            </span>
-            <span class="discount">
-              <img src="./images/icons/tag.svg" width="12px" height="12px" alt="">
-              10% discount
-            </span>
-          </h2>
-          <p>
-            <span style="text-decoration: line-through;">NGN 52,000</span>
-            4 days x NGN 13,000
-          </p>
 
+
+
+
+
+
+
+
+        
         </div>
-        <button class="checkbox checked">
-          <img src="../images/icons/check.svg" alt="">
-        </button>
+        <p class="checkBoxTag checkbox " ><label for="hideShow2"></label></p>
+        
       </div>
-      <div class="input">
+      
+      <div class="input formInfo">
         <div>
           <div class="flex">
             <h3>NGN 81,000<span class="gray" style="font-size: 14px; font-weight: 400;">/week</span></h3>
             <span class="primary-btn badge">Recommended</span>
           </div>
           <p class="gray">Save NGN 10,000 per week</p>
+          <input type="radio" value="3" name="hideShow" id="hideShow3">
+          <div class="select3 hiddenContents">
+            <div class="day">
+              <select type="" placeholder="Select rental duration"  id="mySelect" onchange="myFunction()">
+                <option value="Audi">1day</option>
+                <option value="BMW">2days</option>
+                <option value="Mercedes">3days</option>
+                <option value="Volvo">4days</option>
+              </select>
+            </div>
+          </div>
         </div>
-        <button class="checkbox" clicked>
-          <img src="./images/icons/check.svg" alt="">
-        </button>
+        <p class="checkBoxTag checkbox" ><label for="hideShow3"></label></p>
       </div>
     </div>
+
 
     <div class="details">
       <div>
@@ -186,21 +215,5 @@
       </div>
     </div>
   </main>
-  <section class="overlay">
-    <div class="checkout">
-      <div>
-        <h2 style="font-weight: 800; margin-top: 12px;">
-          NGN 46,800 
-          <span class="gray" style="font-size: 14px; font-weight: 400;"> total
-          </span>
-        </h2>
-        <p>
-          4 days x NGN 13,000
-        </p>
-      </div>
-
-      <a href="" class="primary-btn">Start Booking</a>
-    </div>
-  </section>
 </body>
 </html>
