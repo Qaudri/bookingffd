@@ -4,27 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BooKIT Car Rental</title>
-  <link rel="stylesheet" href="./css/rental.css">
-  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="../css/rental.css">
+  <link rel="stylesheet" href="../css/styles.css">
+  <style>
+    .image {
+      background: url('../images/apartment.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  </style>
 </head>
 <body>
   <main>
     <div class="nav">
       <button>
-        <img src="./images/icons/arrow.svg" alt="">
+        <img src="../images/icons/arrow.svg" alt="">
       </button>
       <button class="blue">
         Cancel
       </button>
     </div>
-    <h2>Confirm & Pay for your Car Reservation. Only takes a minute!</h2>
+    <h2>Confirm & Pay for your Apartment Reservation. Only takes a minute!</h2>
 
     <div class="snapshot">
       <div class="image"></div>
       <div class="">
-        <h5>Mercedes Benz GLE 2023</h5>
-        <p>No 21, Abule-Egba street, Lagos Nigeria </p>
-        <span class="available">3 available</span>
+        <h5>The People's Brownstone        </h5>
+        <p>123 Sunset Boulevard, Los Angeles, CA 90001 </p>
       </div>
     </div>
 
@@ -33,12 +40,12 @@
     <div class="summary">
       <h3>Booking Summary</h3>
       <div class="flex">
-        <p>Payment type</p>
-        <p>Hourly Payment</p>
+        <p>Apartment type</p>
+        <p>2-Bedroom Apartment</p>
       </div>
       <div class="flex">
-        <p>Duration</p>
-        <p>3 Hours</p>
+        <p>Duration paid for</p>
+        <p>1 Year</p>
       </div>
     </div>
 
@@ -61,10 +68,14 @@
       <div>
         <label for="last">Phone Number</label>
         <div class="input">
-          <p>+234 <span style="height: 20px;"><img src="./images/icons/chevron.svg" width="20px" alt="" height="20px"></span></p>
+          <p>+234 <span style="height: 20px;"><img src="../images/icons/chevron.svg" width="20px" alt="" height="20px"></span></p>
           <input type="tel" placeholder="000000000">
         </div>
-        <p style="margin-top: 2px;">Needed to get updates concerning the car from the owner</p>
+        <p style="margin-top: 2px;">Needed so owner can contact you</p>
+      </div>
+      <div>
+        <label for="request">Special Request</label>
+        <input id="request" type="text" placeholder="Optional">
       </div>
     </div>
 
@@ -74,24 +85,19 @@
       <h3>Billing Details</h3>
       <div class="flex">
         <div>
-          <p>3 hours x  NGN 1,550 per hr</p>
-          <span style="color: #00000060; font-size: 12px;">NGN 1,550 per hour</span>
+          <p>1 year x NGN 3,950,000</p>
+          <span style="color: #00000060; font-size: 12px;">NGN 13,000 per night</span>
         </div>
-        <p>NGN 4,650</p>
+        <p>NGN 3,950,000</p>
       </div>
+
       <div class="flex">
         <p>Taxes & Fees</p>
-        <p>NGN 580</p>
+        <p>NGN 2,503</p>
       </div>
       <div class="flex secondary-btn">
         <p style="font-weight: 600;">Total Amount</p>
-        <p style="font-weight: 600;">NGN 5,230</p>
-      </div>
-      <div class="flex">
-        <p>Allow Scheduling <span><img src="./images/icons/help.svg" width="20px" height="20px" alt=""></span></p>
-        <div class="toggle-background">
-          <div class="switch"></div>
-        </div>
+        <p style="font-weight: 600;">NGN 3,952,503</p>
       </div>
     </div>
 
