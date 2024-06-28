@@ -129,6 +129,7 @@ input, .input {
   gap: 8px;
   outline: none;
   width: 100%;
+  background-color: white;
   padding: 10px 14px;
 }
 
