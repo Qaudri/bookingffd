@@ -133,10 +133,10 @@ input, .input {
   padding: 10px 14px;
 }
 
-input:hover, input:focus {
+/* input:hover, input:focus {
   border-color: var(--primary-color);
   color: var(--primary-color);
-}
+} */
 
 input::placeholder {
   color: #00000050;
@@ -152,6 +152,8 @@ button {
   border: none;
   outline: none;
   background: none;
+  width: fit-content;
+  height: fit-content;
 }
 
 .blue {
@@ -227,4 +229,135 @@ button {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.grid {
+  display: grid;
+}
+
+.gap-12 {
+  gap: 12px;
+}
+
+.gap-20 {
+  gap: 20px;
+}
+
+.mt-12 {
+  margin-top: 6px;
+}
+
+.mt-12 {
+  margin-top: 12px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.range{
+  background-color: #595D62;
+  width: 100%;
+  height: 8px;
+  border-radius: 9999px;
+  margin-top: 4px;
+}
+
+.value {
+  height: 8px;
+  background: var(--primary-color);
+  width: 5%;
+  border-radius: 9999px;
+}
+
+.h-fit {
+  height: fit-content;
+}
+
+.w-fit {
+  width: fit-content;
+}
+
+.background {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.object-cover {
+  object-fit: cover;
+}
+
+.object-center {
+  object-position: center;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.car-option {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #00000060;
+  display: flex;
+  gap: 12px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.car-option >.check {
+  display: none;
+}
+
+.car-option.selected {
+  background: #022F8E10;
+  border: none
+}
+
+.car-option.selected > .check {
+  display: block;
+}
+
+.checkmark {
+  background: #00000060;
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  width: 20px;
+}
+
+.check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  width: 20px;
+  height: 20px;
+  background-color: #017401;
+}
+
+.checkbox {
+  border: 1px solid #00000060;
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  width: 24px;
+  height: 24px;
+}
+
+.checkbox.checked {
+  background-color: var(--primary-color);
+  border: none;
 }
