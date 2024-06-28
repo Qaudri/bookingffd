@@ -243,6 +243,7 @@ li {
   width: 100%;
   align-items: center;
   justify-content: space-between;
+  box-shadow: -10px 0px 10px #00000060;
 }
 
 .checkout a {

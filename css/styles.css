@@ -220,3 +220,11 @@ button {
   display: flex;
   align-items: center;
 }
+
+.underline {
+  text-decoration: underline;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
