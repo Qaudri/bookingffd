@@ -133,6 +133,11 @@ input, .input {
   padding: 10px 14px;
 }
 
+.input > input {
+  border: none;
+  padding: 0;
+}
+
 /* input:hover, input:focus {
   border-color: var(--primary-color);
   color: var(--primary-color);
@@ -196,6 +201,11 @@ button {
   width: 16px;
 }
 
+.toggle-background.false {
+  justify-content: flex-start;
+  background-color: #00000050;
+}
+
 .paragraph {
   display: flex;
   align-items: center;
@@ -237,6 +247,14 @@ button {
 
 .grid {
   display: grid;
+}
+
+.content-center {
+  place-content: center;
+}
+
+.gap-8 {
+  gap: 8px;
 }
 
 .gap-12 {
@@ -360,4 +378,21 @@ button {
 .checkbox.checked {
   background-color: var(--primary-color);
   border: none;
+}
+
+.car-picture {
+  border: 1px dashed #00000060;
+  aspect-ratio: 1;
+  width: 100%;
+  border-radius: 8px;
+  display: grid;
+  place-content: center;
+}
+
+.select-options {
+  padding: 8px;
+  background-color: white;
+  box-shadow: 5px 5px 10px #00000010;
+  display: grid;
+  gap: 12px;
 }
