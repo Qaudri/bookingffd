@@ -60,14 +60,6 @@ li {
   align-items: center;
 }
 
-.dot {
-  height: 4px;
-  aspect-ratio: 1;
-  background-color: black;
-  border-radius: 50%;
-  display: block;
-}
-
 .flex {
   gap: 8px;
   margin-top: 8px;

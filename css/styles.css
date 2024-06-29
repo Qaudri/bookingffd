@@ -228,6 +228,14 @@ button {
   margin-top: 6px;
 }
 
+.dot {
+  height: 6px;
+  width: 6px;
+  background-color: black;
+  border-radius: 50%;
+  display: block;
+}
+
 .flex {
   display: flex;
   align-items: center;
@@ -400,4 +408,84 @@ button {
 .confetti {
   background: url('../images/confetti.png');
   background-repeat: no-repeat;
+}
+
+
+
+/* Chatbot pages */
+.chat-nav {
+  display: flex;
+  background-color: white;
+  position: fixed;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  left: 0;
+  padding: 24px;
+}
+
+.chat-title {
+  display: grid;
+  place-content: center;
+  width: 100%;
+  margin-left: -20px;
+}
+
+.chat-area {
+  overflow-y: scroll;
+}
+
+.icon-bar {
+  margin-top: 60px;
+  display: grid;
+  place-content: center;
+}
+
+.icon-bar > img {
+  margin: 8px auto;
+}
+
+.chat {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+  flex-direction: column;
+}
+
+.message {
+  padding: 8px;
+  display: grid;
+  gap: 8px;
+  border-radius: 8px;
+  width: 60%;
+}
+
+.message.bot {
+  background-color: #022F8E10;
+  color: black;
+}
+
+.message.user {
+  background-color: var(--primary-color);
+  color: white;
+  align-self: flex-end;
+}
+
+.message.user>div {
+  display: none;
+}
+
+.message-area {
+  position: absolute;
+  bottom: 0;
+  background-color: white;
+  padding-bottom: 24px;
+  width: 100%;
+}
+
+.suggestions-area {
+  margin-bottom: 12px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
 }
