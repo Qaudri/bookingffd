@@ -14,9 +14,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 body {
   margin: 0;
-  height: 100dvh;
   min-height: 100dvh;
-  overflow: scroll;
 }
 
 main {
@@ -77,6 +75,10 @@ p {
  font-size: 14px;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .secondary-btn {
   background-color: #022F8E10;
   display: flex;
@@ -88,6 +90,7 @@ p {
   font-size: 14px;
   font-weight: 500;
   color: black;
+  cursor: pointer;
 }
 
 .tertiary-btn{
@@ -96,6 +99,7 @@ p {
   font-weight: 600;
   font-size: 16px;
   background: none;
+  cursor: pointer;
 }
 
 .primary-btn {
@@ -108,6 +112,7 @@ p {
   gap: 10px;
   width: 100%;
   font-size: 14px;
+  cursor: pointer;
 }
 
 .primary-btn:disabled {
@@ -145,6 +150,11 @@ input, .input {
 
 input::placeholder {
   color: #00000050;
+}
+
+input[type="checkbox"] {
+  width: 12px;
+  height: 12px;
 }
 
 ul {
@@ -253,6 +263,10 @@ button {
   width: 100%;
 }
 
+.w-1\/2 {
+  width: 50%;
+}
+
 .grid {
   display: grid;
 }
@@ -261,6 +275,9 @@ button {
   place-content: center;
 }
 
+.gap-6 {
+  gap: 6px;
+}
 .gap-8 {
   gap: 8px;
 }
@@ -273,7 +290,7 @@ button {
   gap: 20px;
 }
 
-.mt-12 {
+.mt-6 {
   margin-top: 6px;
 }
 
@@ -283,6 +300,21 @@ button {
 
 .mt-20 {
   margin-top: 20px;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rounded-sm {
+  border-radius: 8px;
+}
+.rounded-md {
+  border-radius: 12px;
+}
+.rounded-lg {
+  border-radius: 20px;
 }
 
 .range{
@@ -309,9 +341,9 @@ button {
 }
 
 .background {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
 }
 
 .object-cover {
@@ -388,7 +420,7 @@ button {
   border: none;
 }
 
-.car-picture {
+.upload-container {
   border: 1px dashed #00000060;
   aspect-ratio: 1;
   width: 100%;
@@ -488,4 +520,124 @@ button {
   display: flex;
   gap: 8px;
   flex-wrap: wrap;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+  main {
+    padding: 0;
+    margin: 0;
+  }
+  .main-wrapper {
+    padding: 36px 24px;
+  }
+  h1 {
+    font-size: 48px;
+  }
+  h2 {
+    font-size: 48px;
+  }
+  h3 {
+    font-size: 22px;
+  }
+  h4 {
+    font-size: 16px;
+  }
+
+  p, input, .input {
+    font-size: 14px;
+  }
+
+  /* Start Signup */
+
+  .bg-fade {
+    background-color: #ffffffe4;
+    height: 100%;
+    display: grid;
+    place-content: center;
+    gap: 20px;
+    padding: 36px 24px; 
+  }
+
+  .wrap-box {
+    padding: 20px;
+    display: grid;
+    gap: 20px;
+    border-radius: 20px;
+    width: 40vw;
+    box-shadow: 0px 0px 10px #00000050;
+  }
+
+  .ribbon {
+    background: url('../images/ribbon.png');
+  }
+
+  /* End Signup */
+
+
+  /* Start services listing */
+
+  .card {
+    background-color: white;
+    box-shadow: 0px 0px 5px #00000050;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    display: grid;
+    gap: 20px;
+    position: relative;
+  }
+  .card.left {
+    grid-column: span 3 / span 3;
+    height: 100%;
+
+  }
+  .card.right {
+    grid-column: span 2 / span 2;
+    height: 100%;
+  }
+  .card.right > .upload-container {
+    width: 100%;
+    aspect-ratio: auto;
+    height: 100%;
+  }
+  .card.right > .button {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+  }
+  .listing-form {
+    display: grid;
+    gap: 24px;
+  }
+
+  .listing {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+
+
+
+  /* End services listing */
+
 }
