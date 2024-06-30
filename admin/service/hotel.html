@@ -7,21 +7,21 @@
   <link rel="stylesheet" href="../../css/styles.css">
 </head>
 <body>
-  <main style="background-color: var(--secondary-color);">
+  <main class="no-padding" style="background-color: var(--secondary-color);">
     <section class="main-wrapper">
       <h1 class="blue">Hotel</h1>
       <p class="blue">Upload your services.</p>
 
-      <div class="listing" style="align-items: flex-start;">
+      <div class="listing">
         <div class="card left">
           <form action="" class="listing-form">
 
-            <div class="flex gap-12" style="align-items: flex-end;">
-              <div class="w-1/2">
+            <div class="input-flex-group" style="align-items: flex-end;">
+              <div class="half">
                 <label for="">Room Type</label>
                 <input type="text" name="" id="" placeholder="Room Type">
               </div>
-              <div class="w-1/2">
+              <div class="half">
                 <div class="flex">
                   <div class="input w-fit"><img src="../../images/icons/plus_blue.svg" width="15px" alt="Plus Icon" ></div>
                   <input type="text" name="" id="" placeholder="Add description">
@@ -30,22 +30,22 @@
               </div>
             </div>
 
-            <div class="flex gap-12">
-              <div style="width: 25%;">
+            <div class="input-flex-group">
+              <div class="quarter">
                 <label for="">State</label>
                 <input type="text" name="" id="" placeholder="Enter state">
               </div>
-              <div style="width: 25%;">
+              <div class="quarter">
                 <label for="">City</label>
                 <input type="text" name="" id="" placeholder="Enter city">
               </div>
-              <div class="w-1/2">
+              <div class="half">
                 <label for="">Address</label>
                 <input type="text" name="" id="" placeholder="Enter address">
               </div>
             </div>
 
-            <div class="flex gap-20">
+            <div class="flex gap-20 flex-wrap">
               <div>
                 <label for="">Additional Services <span class="gray">(Optional)</span></label>
                 <div class="flex gap-8">
@@ -77,12 +77,12 @@
               
             </div>
 
-            <div class="flex gap-12">
-              <div class="w-1/2">
+            <div class="input-flex-group">
+              <div class="half">
                 <label for="">Bedroom Capacity</label>
                 <input type="text" name="" id="" placeholder="Bedroom capacity">
               </div>
-              <div class="w-1/2">
+              <div class="half">
                 <label for="">Price Details</label>
                 <input type="text" name="" id="" placeholder="Price details">
               </div>
@@ -161,7 +161,7 @@
         <div class="card right">
           <div>
             <h4>Upload Cover Photo</h4>
-            <div class="upload-container mt-12"><img src="../../images/icons/add_logo.svg" width="80px" alt=""></div>
+            <div class="upload-container auto-size mt-12"><img src="../../images/icons/add_logo.svg" width="80px" alt=""></div>
           </div>
 
           <div class="button">
