@@ -43,16 +43,14 @@ a {
   text-decoration: none;
 }
 
-h2 {
+h1 {
   font-size: 24px;
   font-weight: 600;
-  color: black;
 }
 
 h2 {
   font-size: 20px;
   font-weight: 600;
-  color: black;
 }
 
 h3 {
@@ -535,6 +533,44 @@ button {
   flex-wrap: wrap;
 }
 
+
+
+
+
+
+/* admin dashboard */
+.atm-card {
+  background-color: var(--primary-color);
+  padding: 12px;
+  border-radius: 8px;
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  color: white;
+}
+
+.dash-action {
+  display: grid;
+  padding: 12px;
+  aspect-ratio: 1;
+  background-color: #022F8E10;
+  border-radius: 8px;
+  place-content: center;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.industry-choice {
+  background-color: var(--secondary-color);
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  grid-area: 12px;
+  padding: 8px 12px;
+  border-radius: 12px;
+}
+/* admin dashboard */
 
 
 
