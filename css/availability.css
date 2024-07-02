@@ -1,0 +1,58 @@
+.buffer {
+  height: 320px;
+}
+
+.facilities {
+  display: flex;
+  gap: 8px;
+}
+
+.facility {
+  border: 1px solid #00000060;
+  border-radius: 8px;
+  padding: 16px 8px;
+  display: grid;
+  gap: 8px;
+  width: 25%;
+}
+
+header {
+  background: url('../images/hotel.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.results, .result {
+  display: grid;
+  gap: 12px;
+  padding: 12px 0;
+}
+
+.result_image {
+  background: url('../images/hotel.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 24px;
+  position: relative;
+  height: 250px;
+}
+
+.specials.input {
+  display: block;
+}
+
+.image {
+  background: url('../images/hotel.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.loading {
+  height: 100%;
+  display: grid;
+  place-content: center;
+  gap: 12px;
+  text-align: center;
+}

@@ -14,9 +14,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 body {
   margin: 0;
-  height: 100dvh;
   min-height: 100dvh;
-  overflow: scroll;
 }
 
 main {
@@ -40,21 +38,24 @@ main {
   margin: 0;
   color: black;
 }
-
+.BoatSuccessimage {
+  background: url('../images/boat.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 a {
   text-decoration: none;
 }
 
-h2 {
+h1 {
   font-size: 24px;
   font-weight: 600;
-  color: black;
 }
 
 h2 {
   font-size: 20px;
   font-weight: 600;
-  color: black;
 }
 
 h3 {
@@ -77,6 +78,10 @@ p {
  font-size: 14px;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .secondary-btn {
   background-color: #022F8E10;
   display: flex;
@@ -88,6 +93,7 @@ p {
   font-size: 14px;
   font-weight: 500;
   color: black;
+  cursor: pointer;
 }
 
 .tertiary-btn{
@@ -96,6 +102,7 @@ p {
   font-weight: 600;
   font-size: 16px;
   background: none;
+  cursor: pointer;
 }
 
 .primary-btn {
@@ -108,6 +115,7 @@ p {
   gap: 10px;
   width: 100%;
   font-size: 14px;
+  cursor: pointer;
 }
 
 .primary-btn:disabled {
@@ -133,13 +141,23 @@ input, .input {
   padding: 10px 14px;
 }
 
-input:hover, input:focus {
+.input > input {
+  border: none;
+  padding: 0;
+}
+
+/* input:hover, input:focus {
   border-color: var(--primary-color);
   color: var(--primary-color);
-}
+} */
 
 input::placeholder {
   color: #00000050;
+}
+
+input[type="checkbox"] {
+  width: 12px;
+  height: 12px;
 }
 
 ul {
@@ -152,6 +170,8 @@ button {
   border: none;
   outline: none;
   background: none;
+  width: fit-content;
+  height: fit-content;
 }
 
 .blue {
@@ -176,6 +196,7 @@ button {
   background-color: #D0D5DD;
 }
 
+
 .toggle-background{
   border-radius: 9999px;
   background: var(--primary-color);
@@ -192,6 +213,11 @@ button {
   border-radius: 9999px;
   aspect-ratio: 1;
   width: 16px;
+}
+
+.toggle-background.false {
+  justify-content: flex-start;
+  background-color: #00000050;
 }
 
 .paragraph {
@@ -214,6 +240,14 @@ button {
   font-size: 10px;
   text-transform: uppercase;
   margin-top: 6px;
+}
+
+.dot {
+  height: 6px;
+  width: 6px;
+  background-color: black;
+  border-radius: 50%;
+  display: block;
 }
 
 .flex {
