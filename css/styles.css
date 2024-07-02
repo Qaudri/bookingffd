@@ -40,7 +40,12 @@ main {
   margin: 0;
   color: black;
 }
-
+.BoatSuccessimage {
+  background: url('../images/boat.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 a {
   text-decoration: none;
 }
@@ -176,6 +181,7 @@ button {
   background-color: #D0D5DD;
 }
 
+
 .toggle-background{
   border-radius: 9999px;
   background: var(--primary-color);
@@ -219,4 +225,1088 @@ button {
 .flex {
   display: flex;
   align-items: center;
+}
+/* boat css */
+header {
+  background: url('../images/boat.jpg');
+  height: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 24px;
+  position: relative;
+}
+
+.counter {
+  background-color: black;
+  color: white;
+  width: fit-content;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 4px 24px;
+  font-size: 14px;
+}
+
+.price {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.discount  {
+  margin-left: 6px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 3px 8px;
+  background-color: #022F8E10;
+  color: var(--primary-color);
+  font-size: 12px;
+  font-weight: 400;
+  width: fit-content;
+}
+.nav > button {
+  background-color: white;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+}
+
+.heading {
+  height: fit-content;
+}
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+li {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.dot {
+  height: 4px;
+  aspect-ratio: 1;
+  background-color: black;
+  border-radius: 50%;
+  display: block;
+}
+
+.flex {
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.options {
+  display: grid;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.input {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.select {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: .75rem;
+  width: 200px;
+}
+
+.select3  {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: .75rem;
+  width: 200px;
+}
+
+.select select {
+  width: 300px;
+  height: 40px;
+}
+
+.select3 select {
+  width: 300px;
+  height: 40px;
+}
+
+.day {
+  display: flex;
+  position: absolute;
+  gap: 4px;
+  right: 5px;
+  width: 160px;
+  height: 400px;
+  align-items: center;
+  margin-bottom: .75rem;
+}
+
+.checkbox {
+  border: 1px solid #00000060;
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  width: 24px;
+  height: 24px;
+}
+
+.checkbox.active {
+  color: #005BD3;
+}
+
+.primary-btn.badge {
+  padding: 4px 8px;
+  width: fit-content;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+
+.details {
+  padding: 36px 0;
+  display: grid;
+  gap: 36px;
+}
+
+.Adetails {
+  padding: 36px 0;
+  display: grid;
+  gap: 36px;
+}
+
+.occupancy {
+  display: grid;
+  gap: 20px;
+}
+
+.occupancy h4 {
+  font-weight: 600;
+}
+
+.check {
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  width: 20px;
+  height: 20px;
+  background-color: #017401;
+}
+
+.specials ul {
+  margin-top: 16px;
+  display: grid;
+  gap: 16px;
+}
+
+.specials li {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.map {
+  border: 1px solid #00000060;
+}
+
+.map img {
+  width: 100%;
+  object-fit: cover;
+  height: 300px;
+  object-position: center;
+}
+
+.info {
+  padding: 12px;
+}
+
+.address {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.circle {
+  border: 8px solid black;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin: 0 auto;
+}
+
+.line {
+  border-right: 3px dashed black;
+  height: 50px;
+  width: 0px;
+  margin: 0 auto;
+}
+
+.square {
+  border: 8px solid black;
+  width: 20px;
+  height: 20px;
+  margin: 0 auto;
+}
+
+.owner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.pfp {
+  background: url('../images/pfp.jpg');
+  width: 72px;
+  aspect-ratio: 1;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.overlay {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 100dvh;
+}
+
+.checkout {
+  background: white;
+  padding: 24px;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.checkout a {
+  width: fit-content;
+}
+.facilities {
+  display: flex;
+  gap: 8px;
+}
+
+.facility {
+  border: 1px solid #00000060;
+  border-radius: 8px;
+  padding: 16px 8px;
+  display: grid;
+  gap: 8px;
+  width: 25%;
+}
+header {
+  background: url('../images/apartment.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* rentals css */
+
+
+.snapshot {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.image {
+  background: url('../images/car.jpg');
+  width: 64px;
+  aspect-ratio: 1;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.available {
+  background-color: #017401;
+  padding: 3px 12px;
+  color: white;
+  display: block;
+  width: fit-content;
+  font-size: 10px;
+  text-transform: uppercase;
+  margin-top: 6px;
+}
+
+.summary {
+  display: grid;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.info {
+  display: grid;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.input {
+  border: 1px solid #D0D5DD;
+  font-weight: 400;
+  font-size: 14px;
+  display: flex;
+  gap: 8px;
+  outline: none;
+  width: 100%;
+  padding: 0 14px;
+}
+
+.input p {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+}
+
+.input input {
+  border: none;
+  padding: none;
+}
+
+
+.flex.secondary-btn {
+  justify-content: space-between;
+  font-weight: 600;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.flex p {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.billing {
+  display: grid;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+a.primary-btn {
+  margin-top: 20px;
+}
+
+/* success css */
+
+.status-icon {
+  display: flex;
+  margin: 0 auto;
+}
+
+.heading {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.heading > img {
+  margin-bottom: 12px;
+}
+
+h4 {
+  margin-top: 6px;
+}
+
+.snapshot {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.image {
+  background: url('../images/car.jpg');
+  width: 64px;
+  aspect-ratio: 1;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.available {
+  background-color: #017401;
+  padding: 3px 12px;
+  color: white;
+  display: block;
+  width: fit-content;
+  font-size: 10px;
+  text-transform: uppercase;
+  margin-top: 6px;
+}
+
+.flex, .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex.secondary-btn {
+  justify-content: space-between;
+  font-weight: 600;
+}
+
+.flex.total {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.flex > .primary-btn {
+  width: fit-content;
+}
+
+.renter-phone {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.paragraph {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.summary {
+  display: grid;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.billing {
+  display: grid;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+.image {
+  background: url('../images/apartment.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* apartment css */
+
+main {
+  background: url('../images/apartment_map.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  padding: 24px;
+}
+
+.bottom {
+  position: relative;
+  z-index: 99;
+}
+
+.buttons {
+  display: flex;
+  align-items: flex-end;
+}
+
+.right {
+  display: grid;
+  gap: 20px;
+  place-content: center;
+  padding: 12px;
+  background-color: white;
+  width: fit-content;
+  border-radius: 12px;
+}
+
+.back {
+  background-color: white;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 12px;
+  border-radius: 9999px;
+  margin: 0 auto;
+}
+
+.card {
+  display: flex;
+  border-radius: 200px;
+  margin-top: 20px;
+}
+
+.image {
+  background: url('../images/apartment.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 50%;
+  padding: 8px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.cancel{
+  background-color: white;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  display: grid;
+  place-content: center;
+}
+
+.details {
+  padding: 12px;
+  background-color: white;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.pin {
+  position: absolute;
+}
+
+.picture {
+  aspect-ratio: 4/3;
+  border-radius: 8px;
+  height: 80px;
+  background: url('../images/room1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 2px solid white;
+  border-bottom: 0;
+}
+
+.drop {
+  position: relative;
+  align-items: flex-start;
+  justify-content: center;
+  display: flex;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.triangle {           
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #2B67F6;
+  position: absolute;
+}
+
+.circle {
+  border-radius: 50%;
+  aspect-ratio: 1;
+  background-color: #2B67F6;
+  border: 15px solid #87CEEB;
+  width: 50px;
+}
+
+.p1 {
+  top: 50%;
+  right: 5%;
+}
+
+.p2 {
+  top: 30%;
+  left: 15%;
+}
+
+.p3 {
+  top: 60%;
+}
+a{
+  text-decoration: none;
+  color: #000000;
+}
+
+/* agreement css */
+
+.container {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-between;
+  height: 65vh;
+}
+
+/* .heading {
+  display: grid;
+  gap: 6px;
+} */
+
+a.primary-btn{
+  margin-top: 20px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.toggle-background{
+  border-radius: 9999px;
+  background: var(--primary-color);
+  width: 44px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 0 4px;
+}
+
+.switch {
+  background: white;
+  border-radius: 9999px;
+  aspect-ratio: 1;
+  width: 16px;
+}
+
+/* email */
+
+header {
+  background: url('../images/award.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/* boat expanded */
+
+header {
+  background: url('../images/boat.jpg');
+  height: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 24px;
+  position: relative;
+}
+
+.Boatcounter {
+  background-color: black;
+  color: white;
+  width: fit-content;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 4px 24px;
+  font-size: 14px;
+}
+
+.Boatprice {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.Boatdiscount  {
+  margin-left: 6px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 3px 8px;
+  background-color: #022F8E10;
+  color: var(--primary-color);
+  font-size: 12px;
+  font-weight: 400;
+  width: fit-content;
+}
+.nav > button {
+  background-color: white;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+}
+
+.Boatheading {
+  height: fit-content;
+}
+.Boatfeatures {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+ li{
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.Boatdot {
+  height: 4px;
+  aspect-ratio: 1;
+  background-color: black;
+  border-radius: 50%;
+  display: block;
+}
+
+.Boatflex {
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.Boatoptions {
+  display: grid;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.Boatinput {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Boatselect {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: .75rem;
+  width: 200px;
+}
+
+.Boatselect3  {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: .75rem;
+  width: 200px;
+}
+
+.Boatselect select {
+  width: 300px;
+  height: 40px;
+}
+
+.Boatselect3 select {
+  width: 300px;
+  height: 40px;
+}
+
+.Boatday {
+  display: flex;
+  position: absolute;
+  gap: 4px;
+  right: 5px;
+  width: 160px;
+  height: 400px;
+  align-items: center;
+  margin-bottom: .75rem;
+}
+
+.Boatcheckbox {
+  border: 1px solid #00000060;
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  width: 24px;
+  height: 24px;
+}
+
+.Boatcheckbox.active {
+  color: #005BD3;
+}
+
+.Boatprimary-btn.badge {
+  padding: 4px 8px;
+  width: fit-content;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+
+
+
+.Boatsprimary-btn {
+  color: white;
+  background: var(--primary-color);
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  font-size: 14px;
+}
+
+.Boatsprimary-btn:disabled {
+  background-color: #022F8E50 ;
+}
+
+.Boatdetails {
+  padding: 36px 0;
+  display: grid;
+  gap: 36px;
+}
+
+.Boatoccupancy {
+  display: grid;
+  gap: 20px;
+}
+
+.Boatoccupancy h4 {
+  font-weight: 600;
+}
+
+.Boatcheck {
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  width: 20px;
+  height: 20px;
+  background-color: #017401;
+}
+.Boatdivider {
+  margin: 20px 0;
+  width: 100%;
+  height: 1px;
+  background-color: #D0D5DD;
+}
+.Boatspecials ul {
+  margin-top: 16px;
+  display: grid;
+  gap: 16px;
+}
+
+.Boatspecials li {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.Boatmap {
+  border: 1px solid #00000060;
+}
+
+.Boatmap img {
+  width: 100%;
+  object-fit: cover;
+  height: 300px;
+  object-position: center;
+}
+
+.Boatinfo {
+  padding: 12px;
+}
+.tertiary-btn{
+  color: #005BD3;
+  text-decoration: underline;
+  font-weight: 600;
+  font-size: 16px;
+  background: none;
+}
+
+.Boataddress {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-top: 20px;
+}
+.Boatdrop {
+  position: relative;
+  align-items: flex-start;
+  justify-content: center;
+  display: flex;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.Boatcircle {
+  border: 8px solid black;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin: 0 auto;
+}
+
+.Boatline {
+  border-right: 3px dashed black;
+  height: 50px;
+  width: 0px;
+  margin: 0 auto;
+}
+
+.square {
+  border: 8px solid black;
+  width: 20px;
+  height: 20px;
+  margin: 0 auto;
+}
+
+.Boatowner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.Boatprofile {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.Boatpfp {
+  background: url('../images/pfp.jpg');
+  width: 72px;
+  aspect-ratio: 1;
+  background-size: cover;
+  border-radius: 50%;
+}
+.Boatparagraph {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.Boatoverlay {
+  /* position: sticky; */
+  top: 0;
+  width: 100%;
+  height: 100dvh;
+}
+
+.Boatcheckout {
+  background: white;
+  padding: 24px;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Boatcheckout a {
+  width: fit-content;
+}
+.facilities {
+  display: flex;
+  gap: 8px;
+}
+.Boatgray {
+  color: #00000060;
+}
+
+.facility {
+  border: 1px solid #00000060;
+  border-radius: 8px;
+  padding: 16px 8px;
+  display: grid;
+  gap: 8px;
+  width: 25%;
+}
+header {
+  background: url('../images/boat.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* ticket  */
+
+.image {
+  background: url('../images/apartment.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.Ticketsnapshot {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+}
+.Ticketdivider {
+  margin: 20px 0;
+  width: 100%;
+  height: 1px;
+  background-color: #D0D5DD;
+}
+
+.Ticketsummary {
+  display: grid;
+  gap: 8px;
+  margin-top: 8px;
+}
+.Ticketflex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.Ticketflex.secondary-btn {
+  justify-content: space-between;
+  font-weight: 600;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.Ticketflex p {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.Ticketflex, .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Ticketflex.secondary-btn {
+  justify-content: space-between;
+  font-weight: 600;
+  margin-top: 20px;
+   gap: 12px;
+  display: block;
+}
+
+.Ticketflex.total {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.Ticketflex > .primary-btn {
+  width: fit-content;
+  margin-top: 12px;
 }
