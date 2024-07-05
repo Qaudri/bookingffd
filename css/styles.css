@@ -177,6 +177,10 @@ button {
   color: #00000060;
 }
 
+.hidden {
+  display: none !important;
+}
+
 .nav {
   display: flex;
   align-items: center;
@@ -533,6 +537,21 @@ button {
   flex-wrap: wrap;
 }
 
+.snapshot {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.snapshot > .image {
+  background: url('../images/car.jpg');
+  width: 64px;
+  aspect-ratio: 1;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 
 
 
@@ -683,6 +702,120 @@ button {
 }
 /* settings */
 
+
+/* payment history */
+.back-btn {
+  background-color: white;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  width: 25px;
+  display: grid;
+  place-content: center;
+}
+.blue-nav {
+  background-color: var(--primary-color);
+  padding: 24px;
+  color: white;
+}
+
+.search-filter-input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 24px;
+}
+
+.filter-options {
+  padding: 12px;
+  border-radius: 4px;
+  box-shadow: 5px 5px 5px #00000010;
+  position: absolute;
+  right: 12px;
+  top: 100%;
+  display: grid;
+  gap: 12px;
+  background-color: white;
+  color: gray;
+  border: 1px solid #00000050;
+  z-index: 1;
+}
+
+.history-item {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.history-item-detail {
+  padding: 12px;
+
+}
+
+.transaction-status {
+  padding: 4px 8px;
+  border-radius: 99999px;
+}
+
+.transaction-status.successful {
+  color: #017401;
+  background-color: #01740120;
+}
+
+.transaction-status.active {
+  color: #ffb700;
+  background-color: #ffb70020;
+}
+
+.booking-status-type {
+  padding: 12px;
+  border-radius: 4px;
+  border: 1px solid #00000050;
+}
+
+.location-info {
+  padding: 12px;
+  border: 1px solid #00000050;
+  border-top: none;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  width: 100%;
+  margin-top: -4px;
+}
+
+.calendar {
+  border: 1px solid #00000050;
+  border-radius: 8px;
+  padding: 12px;
+  margin-top: 24px;
+}
+
+.days-and-dates {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  place-content: center;
+  margin-top: 12px;
+  text-align: center;
+  gap: 12px;
+}
+
+.date {
+  text-align: center;
+  justify-content: center;
+  aspect-ratio: 1;
+  margin: auto;
+  font-weight: 500;
+  padding: 10px;
+}
+
+.date.selected, .selected-date {
+  color: var(--primary-color);
+  background-color: #022F8E20;
+  font-weight: 600;
+  padding: 10px;
+}
+
+/* payment history */
 
 @media screen and (min-width: 768px) {
   .half {
