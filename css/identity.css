@@ -33,6 +33,21 @@ form {
   color: #00000060;
 }
 
+.range{
+  background-color: #595D62;
+  width: 100%;
+  height: 8px;
+  border-radius: 9999px;
+  margin-top: 4px;
+}
+
+.value {
+  height: 8px;
+  background: var(--primary-color);
+  width: 5%;
+  border-radius: 9999px;
+}
+
 .criteria {
   color: #00000060;
   display: grid;
@@ -47,6 +62,15 @@ ul {
 li {
   display: flex;
   gap: 12px;
+}
+
+.checkmark {
+  background: #00000060;
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  width: 20px;
 }
 
 button{

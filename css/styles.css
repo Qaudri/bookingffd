@@ -38,12 +38,7 @@ main {
   margin: 0;
   color: black;
 }
-.BoatSuccessimage {
-  background: url('../images/boat.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
+
 a {
   text-decoration: none;
 }
@@ -196,7 +191,6 @@ button {
   background-color: #D0D5DD;
 }
 
-
 .toggle-background{
   border-radius: 9999px;
   background: var(--primary-color);
@@ -253,4 +247,1209 @@ button {
 .flex {
   display: flex;
   align-items: center;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.w-1\/2 {
+  width: 50%;
+}
+
+.grid {
+  display: grid;
+}
+
+.content-center {
+  place-content: center;
+}
+
+.gap-6 {
+  gap: 6px;
+}
+.gap-8 {
+  gap: 8px;
+}
+
+.gap-12 {
+  gap: 12px;
+}
+
+.gap-20 {
+  gap: 20px;
+}
+
+.mt-6 {
+  margin-top: 6px;
+}
+
+.mt-12 {
+  margin-top: 12px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rounded-sm {
+  border-radius: 8px;
+}
+.rounded-md {
+  border-radius: 12px;
+}
+.rounded-lg {
+  border-radius: 20px;
+}
+
+.range{
+  background-color: #595D62;
+  width: 100%;
+  height: 8px;
+  border-radius: 9999px;
+  margin-top: 4px;
+}
+
+.value {
+  height: 8px;
+  background: var(--primary-color);
+  width: 5%;
+  border-radius: 9999px;
+}
+
+.h-fit {
+  height: fit-content;
+}
+
+.w-fit {
+  width: fit-content;
+}
+
+.background {
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+}
+
+.object-cover {
+  object-fit: cover;
+}
+
+.object-center {
+  object-position: center;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.car-option {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #00000060;
+  display: flex;
+  gap: 12px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.car-option >.check {
+  display: none;
+}
+
+.car-option.selected {
+  background: #022F8E10;
+  border: none
+}
+
+.car-option.selected > .check {
+  display: block;
+}
+
+.checkmark {
+  background: #00000060;
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  width: 20px;
+}
+
+.check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  width: 20px;
+  height: 20px;
+  background-color: #017401;
+}
+
+.checkbox {
+  border: 1px solid #00000060;
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  width: 24px;
+  height: 24px;
+}
+
+.checkbox.checked {
+  background-color: var(--primary-color);
+  border: none;
+}
+
+.upload-container {
+  border: 1px dashed #00000060;
+  aspect-ratio: 1;
+  width: 100%;
+  border-radius: 8px;
+  display: grid;
+  place-content: center;
+}
+
+.follselect-options {
+  padding: 8px;
+  background-color: white;
+  box-shadow: 5px 5px 10px #00000010;
+  display: grid;
+  gap: 12px;
+}
+
+.confetti {
+  background: url('../images/confetti.png');
+  background-repeat: no-repeat;
+}
+
+
+
+/* Chatbot pages */
+.chat-nav {
+  display: flex;
+  background-color: white;
+  position: fixed;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  left: 0;
+  padding: 24px;
+}
+
+.chat-title {
+  display: grid;
+  place-content: center;
+  width: 100%;
+  margin-left: -20px;
+}
+
+.chat-area {
+  overflow-y: scroll;
+}
+
+.icon-bar {
+  margin-top: 60px;
+  display: grid;
+  place-content: center;
+}
+
+.icon-bar > img {
+  margin: 8px auto;
+}
+
+.chat {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+  flex-direction: column;
+}
+
+.message {
+  padding: 8px;
+  display: grid;
+  gap: 8px;
+  border-radius: 8px;
+  width: 60%;
+}
+
+.message.bot {
+  background-color: #022F8E10;
+  color: black;
+}
+
+.message.user {
+  background-color: var(--primary-color);
+  color: white;
+  align-self: flex-end;
+}
+
+.message.user>div {
+  display: none;
+}
+
+.message-area {
+  position: absolute;
+  bottom: 0;
+  background-color: white;
+  padding-bottom: 24px;
+  width: 100%;
+}
+
+.suggestions-area {
+  margin-bottom: 12px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.no-padding {
+  padding: 0 24px;
+  margin: 0;
+}
+
+.main-wrapper {
+  padding: 24px 0;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+
+
+
+
+
+/* admin dashboard */
+.atm-card {
+  background-color: var(--primary-color);
+  padding: 12px;
+  border-radius: 8px;
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  color: white;
+}
+
+.dash-action {
+  display: grid;
+  padding: 12px;
+  aspect-ratio: 1;
+  background-color: #022F8E10;
+  border-radius: 8px;
+  place-content: center;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.industry-choice {
+  background-color: var(--secondary-color);
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  grid-area: 12px;
+  padding: 8px 12px;
+  border-radius: 12px;
+}
+/* admin dashboard */
+
+
+
+
+/* services listing */
+.ribbon {
+  background: url('../images/ribbon.png');
+}
+
+.bg-fade {
+  background-color: #ffffffe4;
+  height: 100%;
+  display: grid;
+  place-content: center;
+  gap: 20px;
+  padding: 36px 24px; 
+}
+
+.wrap-box {
+  padding: 20px;
+  display: grid;
+  gap: 20px;
+  border-radius: 20px;
+  width: 100%;
+  box-shadow: 0px 0px 10px #00000050;
+}
+
+.card {
+  background-color: white;
+  box-shadow: 0px 0px 5px #00000050;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  display: grid;
+  gap: 36px;
+  position: relative;
+}
+
+.listing {
+  display: grid;
+  gap: 12px;
+}
+
+.listing-form {
+  display: grid;
+  gap: 20px;
+}
+
+.half, .quarter {
+  width: 100%;
+}
+
+.input-flex-group {
+  display: grid;
+  gap: 12px;
+}
+
+.three-cols {
+  display: grid;
+  gap: 12px;
+}
+
+.card.right > .upload-container {
+  width: 100%;
+  aspect-ratio: auto;
+  height: 300px;
+}
+
+.auto-size {
+  aspect-ratio: auto;
+  width: 100%;
+  height: 300px;
+}
+
+/* services listing */
+
+
+
+
+/* settings */
+.settings-wrapper > aside {
+  display: none;
+}
+
+.rotate-90 {
+  rotate: 90deg;
+}
+
+.settings-content {
+  display: grid;
+  gap: 20px;
+}
+
+.settings-section {
+  border: 1px solid #00000050;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.pfp {
+  background: url('/images/owner.jpg');
+  height: 80px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+
+.settings-info {
+  display: grid;
+  gap: 20px;
+}
+/* settings */
+
+
+@media screen and (min-width: 768px) {
+  .half {
+    width: 50%;
+  }
+
+  .quarter {
+    width: 25%;
+  }
+
+  .three-cols {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .input-flex-group {
+    display: flex;
+    gap: 12px;
+  }
+
+  .settings-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+}
+
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+  main {
+    padding: 0;
+    margin: 0;
+  }
+  .main-wrapper {
+    padding: 36px 24px;
+  }
+  h1 {
+    font-size: 48px;
+  }
+  h2 {
+    font-size: 48px;
+  }
+  h3 {
+    font-size: 22px;
+  }
+  h4 {
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  p, input, .input {
+    font-size: 14px;
+  }
+
+  /* Start Signup */
+
+  .bg-fade {
+    background-color: #ffffffe4;
+    height: 100%;
+    display: grid;
+    place-content: center;
+    gap: 20px;
+    padding: 36px 24px; 
+  }
+
+  .wrap-box {
+    padding: 20px;
+    display: grid;
+    gap: 20px;
+    border-radius: 20px;
+    width: 40vw;
+    box-shadow: 0px 0px 10px #00000050;
+  }
+
+  /* End Signup */
+
+
+  /* Start services listing */
+
+  .card {
+    background-color: white;
+    box-shadow: 0px 0px 5px #00000050;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    display: grid;
+    gap: 20px;
+    position: relative;
+  }
+  .card.left {
+    grid-column: span 3 / span 3;
+    height: 100%;
+  }
+  .card.right {
+    grid-column: span 2 / span 2;
+    height: 100%;
+  }
+  .card.right > .upload-container {
+    width: 100%;
+    aspect-ratio: auto;
+    height: 100%;
+  }
+  .card.right > .button {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+  }
+  .listing-form {
+    display: grid;
+    gap: 24px;
+  }
+  .listing {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .half {
+    width: 50%;
+  }
+
+  .quarter {
+    width: 25%;
+  }
+
+  .three-cols {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .input-flex-group {
+    display: flex;
+    gap: 12px;
+  }
+
+  .settings-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+  }
+
+  .settings-wrapper > aside {
+    border-right: 1px solid #00000050;
+    display: grid;
+    gap: 20px;
+    padding-right: 20px;
+    align-content: start;
+    justify-content: center;
+    width: 100%;
+  }
+  /* End services listing */
+
+}
+
+.Adminflex {
+  display: flex;
+  align-items: center;
+}
+
+.Adminmain {
+  position: relative;
+  height: 100%;
+  margin: 0 24px;
+  padding: 24px 0;
+}
+.Adminimg {
+  background: url('/images/owner.jpg');
+  height: 80px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+
+input, .Admininput {
+  border: 1px solid #D0D5DD;
+  font-weight: 400;
+  font-size: 14px;
+  display: flex;
+  gap: 8px;
+  outline: none;
+  width: 100%;
+  background-color: white;
+  padding: 10px 14px;
+}
+
+.Admininput > input {
+  border: none;
+  padding: 0;
+}
+
+/* input:hover, input:focus {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+} */
+
+input::placeholder {
+  color: #00000050;
+}
+@media screen and (min-width: 768px) {
+p, input, .Admininput {
+  font-size: 14px;
+}
+}
+.Adminatm-card {
+  background-color: var(--primary-color);
+  padding: 12px;
+  border-radius: 8px;
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  color: white;
+}
+.Admingrid {
+  display: grid;
+}
+.Admingrid-cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.Admingrid-cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+.gap-6 {
+  gap: 6px;
+}
+.gap-8 {
+  gap: 8px;
+}
+.content-center {
+  place-content: center;
+}
+
+
+.gap-12 {
+  gap: 12px;
+}
+
+.gap-20 {
+  gap: 20px;
+}
+
+.mt-6 {
+  margin-top: 6px;
+}
+
+.mt-12 {
+  margin-top: 12px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rounded-sm {
+  border-radius: 8px;
+}
+.rounded-md {
+  border-radius: 12px;
+}
+.rounded-lg {
+  border-radius: 20px;
+}
+
+.Admindash-action {
+  display: grid;
+  padding: 12px;
+  aspect-ratio: 1;
+  background-color: #022F8E10;
+  border-radius: 8px;
+  place-content: center;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.Adminflex-wrap {
+  flex-wrap: wrap;
+}
+
+.Adminindustry-choice {
+  background-color: var(--secondary-color);
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  grid-area: 12px;
+  padding: 8px 12px;
+  border-radius: 12px;
+}
+.Adminrange{
+  background-color: #595D62;
+  width: 100%;
+  height: 8px;
+  border-radius: 9999px;
+  margin-top: 4px;
+}
+
+.Adminvalue {
+  height: 8px;
+  background: var(--primary-color);
+  width: 5%;
+  border-radius: 9999px;
+}
+
+.h-fit {
+  height: fit-content;
+}
+
+.w-fit {
+  width: fit-content;
+}
+.Admingray {
+  color: #00000060;
+}
+.Adminblue {
+  color: var(--primary-color)
+}
+.Adminupload-container {
+  border: 1px dashed #00000060;
+  aspect-ratio: 1;
+  width: 100%;
+  border-radius: 8px;
+  display: grid;
+  place-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.Adminconfetti {
+  background: url('../images/confetti.png');
+  background-repeat: no-repeat;
+}
+
+/* admin account setup  */
+.AdminAccbackground {
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+}
+
+.Adminsetupribbon {
+  background: url('../images/ribbon.png');
+}
+.no-padding {
+  padding: 0 24px;
+  margin: 0;
+}
+.Adminaccbg-fade {
+  background-color: #ffffffe4;
+  height: 100%;
+  display: grid;
+  place-content: center;
+  gap: 20px;
+  padding: 36px 24px; 
+}
+
+.Adminaccwrap-box {
+  padding: 20px;
+  display: grid;
+  gap: 20px;
+  border-radius: 20px;
+  width: 100%;
+  box-shadow: 0px 0px 10px #00000050;
+}
+
+@media screen and (min-width: 1024px) {
+.wrap-box {
+  padding: 20px;
+  display: grid;
+  gap: 20px;
+  border-radius: 20px;
+  width: 40vw;
+  box-shadow: 0px 0px 10px #00000050;
+}
+.Adminmain-wrapper {
+  padding: 36px 24px;
+}
+.Adminsettings-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+.Adminsettings-wrapper > aside {
+  border-right: 1px solid #00000050;
+  display: grid;
+  gap: 20px;
+  padding-right: 20px;
+  align-content: start;
+  justify-content: center;
+  width: 100%;
+}
+.Admininput-flex-group {
+  display: flex;
+  gap: 12px;
+}
+
+.Adminhalf {
+  width: 50%;
+}
+
+.Adminquarter {
+  width: 25%;
+}
+.Admincard {
+  background-color: white;
+  box-shadow: 0px 0px 5px #00000050;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  display: grid;
+  gap: 20px;
+  position: relative;
+}
+.Admincard.Adminleft {
+  grid-column: span 3 / span 3;
+  height: 100%;
+}
+.Admincard.Adminright {
+  grid-column: span 2 / span 2;
+  height: 100%;
+}
+.Admincard.Adminright > .Adminupload-container {
+  width: 100%;
+  aspect-ratio: auto;
+  height: 100%;
+}
+.Admincard.Adminright > .Adminbutton {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+}
+
+
+
+}
+
+.Adminmain-wrapper {
+  padding: 24px 0;
+}
+
+.Admincard {
+  background-color: white;
+  box-shadow: 0px 0px 5px #00000050;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  display: grid;
+  gap: 36px;
+  position: relative;
+}
+.Adminsettings-wrapper > aside {
+  display: none;
+}
+
+.Adminsettings-content {
+  display: grid;
+  gap: 20px;
+}
+
+
+.Adminsettings-section {
+  border: 1px solid #00000050;
+  border-radius: 12px;
+  padding: 20px;
+}
+.background {
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+}
+.Adminsettings-info {
+  display: grid;
+  gap: 20px;
+}
+.Adminselect-options {
+  padding: 8px;
+  background-color: white;
+  box-shadow: 5px 5px 10px #00000010;
+  display: grid;
+  gap: 12px;
+}
+
+
+@media screen and (min-width: 768px) {
+.Adminsettings-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.Admininput-flex-group {
+  display: flex;
+  gap: 12px;
+}
+.Adminhalf {
+  width: 50%;
+}
+
+.Adminquarter {
+  width: 25%;
+}
+
+}
+/* admin service listing  */
+
+.Adminlisting {
+  display: grid;
+  gap: 12px;
+}
+
+.Adminlisting-form {
+  display: grid;
+  gap: 20px;
+}
+
+.Admincard.Adminleft {
+  grid-column: span 3 / span 3;
+  height: 100%;
+}
+.Admininput-flex-group {
+  display: grid;
+  gap: 12px;
+}
+.Adminhalf, .Adminquarter {
+  width: 100%;
+}
+
+
+
+/* Chatbot pages */
+.chat-nav {
+  display: flex;
+  background-color: white;
+  position: fixed;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  left: 0;
+  padding: 24px;
+}
+.Chatgrid{
+  display: grid;
+}
+
+.chat-title {
+  display: grid;
+  place-content: center;
+  width: 100%;
+  margin-left: -20px;
+}
+
+.chat-area {
+  overflow-y: scroll;
+}
+
+.Chaticon-bar {
+  margin-top: 60px;
+  display: grid;
+  place-content: center;
+}
+
+.Chaticon-bar > img {
+  margin: 8px auto;
+}
+
+.chat {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+  flex-direction: column;
+}
+
+.message {
+  padding: 8px;
+  display: grid;
+  gap: 8px;
+  border-radius: 8px;
+  width: 60%;
+}
+
+.message.bot {
+  background-color: #022F8E10;
+  color: black;
+}
+
+.message.user {
+  background-color: var(--primary-color);
+  color: white;
+  align-self: flex-end;
+}
+
+.message.user>div {
+  display: none;
+}
+
+.message-area {
+  position: absolute;
+  bottom: 0;
+  background-color: white;
+  padding-bottom: 24px;
+  width: 100%;
+}
+
+.suggestions-area {
+  margin-bottom: 12px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.no-padding {
+  padding: 0 24px;
+  margin: 0;
+}
+
+.main-wrapper {
+  padding: 24px 0;
+}
+
+.Chatflex-wrap {
+  flex-wrap: wrap;
+}
+.Chatflex {
+  display: flex;
+  align-items: center;
+}
+
+.Chatgray {
+  color: #00000060;
+}
+.Chatdot {
+  height: 6px;
+  width: 6px;
+  background-color: black;
+  border-radius: 50%;
+  display: block;
+}
+
+
+/* apartment listing  */
+
+.Apartment_grid {
+  display: grid;
+}
+.Apartment_range{
+  background-color: #595D62;
+  width: 100%;
+  height: 8px;
+  border-radius: 9999px;
+  margin-top: 4px;
+}
+
+.Apartment_value {
+  height: 8px;
+  background: var(--primary-color);
+  width: 5%;
+  border-radius: 9999px;
+}
+ .Apartment_input {
+  border: 1px solid #D0D5DD;
+  font-weight: 400;
+  font-size: 14px;
+  display: flex;
+  gap: 8px;
+  outline: none;
+  width: 100%;
+  background-color: white;
+  padding: 10px 14px;
+}
+.car-option {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #00000060;
+  display: flex;
+  gap: 12px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.car-option >.check {
+  display: none;
+}
+
+.car-option.selected {
+  background: #022F8E10;
+  border: none
+}
+
+.car-option.selected > .check {
+  display: block;
+}
+
+.Apartmentupload-container {
+  border: 1px dashed #00000060;
+  aspect-ratio: 1;
+  width: 100%;
+  border-radius: 8px;
+  display: grid;
+  place-content: center;
+}
+
+
+
+
+.Apartment_grid {
+  display: grid;
+}
+.Apartment_range{
+  background-color: #595D62;
+  width: 100%;
+  height: 8px;
+  border-radius: 9999px;
+  margin-top: 4px;
+}
+
+.Apartment_value {
+  height: 8px;
+  background: var(--primary-color);
+  width: 5%;
+  border-radius: 9999px;
+}
+ .Apartment_input {
+  border: 1px solid #D0D5DD;
+  font-weight: 400;
+  font-size: 14px;
+  display: flex;
+  gap: 8px;
+  outline: none;
+  width: 100%;
+  background-color: white;
+  padding: 10px 14px;
+}
+.car-option {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #00000060;
+  display: flex;
+  gap: 12px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.car-option >.check {
+  display: none;
+}
+
+.car-option.selected {
+  background: #022F8E10;
+  border: none
+}
+
+.car-option.selected > .check {
+  display: block;
+}
+
+.Apartmentupload-container {
+  border: 1px dashed #00000060;
+  aspect-ratio: 1;
+  width: 100%;
+  border-radius: 8px;
+  display: grid;
+  place-content: center;
 }
